@@ -580,7 +580,7 @@ cBlockInfo::cBlockInfoArray::cBlockInfoArray()
 	Info[E_BLOCK_FLOWER                       ].m_IsSolid = false;
 	Info[E_BLOCK_HEAVY_WEIGHTED_PRESSURE_PLATE].m_IsSolid = false;
 	Info[E_BLOCK_INACTIVE_COMPARATOR          ].m_IsSolid = false;
-+	Info[E_BLOCK_LADDER                       ].m_IsSolid = false;
+	Info[E_BLOCK_LADDER                       ].m_IsSolid = false;
 	Info[E_BLOCK_LAVA                         ].m_IsSolid = false;
 	Info[E_BLOCK_LEVER                        ].m_IsSolid = false;
 	Info[E_BLOCK_LIGHT_WEIGHTED_PRESSURE_PLATE].m_IsSolid = false;
@@ -591,7 +591,7 @@ cBlockInfo::cBlockInfoArray::cBlockInfoArray()
 	Info[E_BLOCK_RAIL                         ].m_IsSolid = false;
 	Info[E_BLOCK_RED_MUSHROOM                 ].m_IsSolid = false;
 	Info[E_BLOCK_REDSTONE_REPEATER_OFF        ].m_IsSolid = false;
-+	Info[E_BLOCK_REDSTONE_REPEATER_ON         ].m_IsSolid = false;
+	Info[E_BLOCK_REDSTONE_REPEATER_ON         ].m_IsSolid = false;
 	Info[E_BLOCK_REDSTONE_TORCH_OFF           ].m_IsSolid = false;
 	Info[E_BLOCK_REDSTONE_TORCH_ON            ].m_IsSolid = false;
 	Info[E_BLOCK_REDSTONE_WIRE                ].m_IsSolid = false;
