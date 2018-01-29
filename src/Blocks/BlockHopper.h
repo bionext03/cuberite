@@ -28,13 +28,13 @@ public:
 		// Convert the blockface into meta:
 		switch (a_BlockFace)
 		{
-			case BLOCK_FACE_BOTTOM: a_BlockMeta = E_META_HOPPER_FACING_YM;  break;
-			case BLOCK_FACE_TOP:    a_BlockMeta = E_META_HOPPER_FACING_YM;  break;
-			case BLOCK_FACE_EAST:   a_BlockMeta = E_META_HOPPER_FACING_XM;  break;
-			case BLOCK_FACE_NORTH:  a_BlockMeta = E_META_HOPPER_FACING_ZP;  break;
-			case BLOCK_FACE_SOUTH:  a_BlockMeta = E_META_HOPPER_FACING_ZM;  break;
-			case BLOCK_FACE_WEST:   a_BlockMeta = E_META_HOPPER_FACING_XP;  break;
-			case BLOCK_FACE_NONE:   a_BlockMeta = E_META_HOPPER_UNATTACHED; break;
+			case BLOCK_FACE_BOTTOM: a_BlockMeta = (a_BlockMeta & ~E_META_HOPPER_FACING_MASK) | E_META_HOPPER_FACING_YM;  break;
+			case BLOCK_FACE_TOP:    a_BlockMeta = (a_BlockMeta & ~E_META_HOPPER_FACING_MASK) | E_META_HOPPER_FACING_YM;  break;
+			case BLOCK_FACE_EAST:   a_BlockMeta = (a_BlockMeta & ~E_META_HOPPER_FACING_MASK) | E_META_HOPPER_FACING_XM;  break;
+			case BLOCK_FACE_NORTH:  a_BlockMeta = (a_BlockMeta & ~E_META_HOPPER_FACING_MASK) | E_META_HOPPER_FACING_ZP;  break;
+			case BLOCK_FACE_SOUTH:  a_BlockMeta = (a_BlockMeta & ~E_META_HOPPER_FACING_MASK) | E_META_HOPPER_FACING_ZM;  break;
+			case BLOCK_FACE_WEST:   a_BlockMeta = (a_BlockMeta & ~E_META_HOPPER_FACING_MASK) | E_META_HOPPER_FACING_XP;  break;
+			case BLOCK_FACE_NONE:   a_BlockMeta = (a_BlockMeta & ~E_META_HOPPER_FACING_MASK) | E_META_HOPPER_UNATTACHED; break;
 		}
 		return true;
 	}

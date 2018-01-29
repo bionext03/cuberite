@@ -25,7 +25,7 @@
 #include "DropSpenserHandler.h"
 #include "RedstoneComparatorHandler.h"
 #include "TrappedChestHandler.h"
-
+#include "HopperHandler.h"
 
 
 

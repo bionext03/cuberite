@@ -10,6 +10,7 @@ set (HDRS
 	CommandBlockHandler.h
 	DoorHandler.h
 	DropSpenserHandler.h
+	HopperHandler.h
 	IncrementalRedstoneSimulator.h
 	RedstoneHandler.h
 	RedstoneSimulatorChunkData.h

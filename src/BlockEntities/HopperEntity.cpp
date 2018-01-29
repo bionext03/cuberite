@@ -34,7 +34,7 @@ bool cHopperEntity::GetOutputBlockPos(NIBBLETYPE a_BlockMeta, int & a_OutputX, i
 	a_OutputX = m_PosX;
 	a_OutputY = m_PosY;
 	a_OutputZ = m_PosZ;
-	switch (a_BlockMeta)
+	switch (a_BlockMeta & E_META_HOPPER_FACING_MASK)
 	{
 		case E_META_HOPPER_FACING_XM: a_OutputX--; return true;
 		case E_META_HOPPER_FACING_XP: a_OutputX++; return true;
